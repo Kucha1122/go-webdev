@@ -3,7 +3,11 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Go web</title>
+    {{if .FirstName}}
+    <title>{{.FirstName}}</title>
+    {{else}}
+    <title>{{.Title}}</title>
+    {{end}}
 </head>
 <link rel="stylesheet" href="/public/css/main.css">
 <body>
